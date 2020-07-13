@@ -1,9 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './Header';
 
 function App() {
-  return ( 
-    <Header title="Omnistack" />
+
+  const [counter, setCounter] = useState(0);
+
+  // Array [value, Update Function]
+
+  function increment() {
+    setCounter(counter + 1);
+  }
+
+
+  return (
+    <div>
+      <Header> Counter:   {counter}  </ Header>
+      <button onClick={increment}>Incrementar</button>
+    </div> 
   );
 }
 
