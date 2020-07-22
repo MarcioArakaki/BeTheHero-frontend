@@ -37,6 +37,48 @@ export default function Profile() {
                         <FiTrash2 size={20} color="#a8a8b3"></FiTrash2>
                     </button>
                 </li>
+                <li>
+                    <strong>Caso:</strong>
+                    <p>Incident test</p>
+
+                    <strong>Descripton</strong>
+                    <p>Test description</p>
+
+                    <strong>VALUE:</strong>
+                    <p>R$ 120,00</p>
+
+                    <button type="button">
+                        <FiTrash2 size={20} color="#a8a8b3"></FiTrash2>
+                    </button>
+                </li>
+                <li>
+                    <strong>Caso:</strong>
+                    <p>Incident test</p>
+
+                    <strong>Descripton</strong>
+                    <p>Test description</p>
+
+                    <strong>VALUE:</strong>
+                    <p>R$ 120,00</p>
+
+                    <button type="button">
+                        <FiTrash2 size={20} color="#a8a8b3"></FiTrash2>
+                    </button>
+                </li>
+                <li>
+                    <strong>Caso:</strong>
+                    <p>Incident test</p>
+
+                    <strong>Descripton</strong>
+                    <p>Test description</p>
+
+                    <strong>VALUE:</strong>
+                    <p>R$ 120,00</p>
+
+                    <button type="button">
+                        <FiTrash2 size={20} color="#a8a8b3"></FiTrash2>
+                    </button>
+                </li>
             </ul>
         </div>);
 }
