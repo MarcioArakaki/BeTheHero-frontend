@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState, useEffect } from 'react';
 import './styles.css';
 import logoImg from '../../assets/logo.svg';
 import { Link } from 'react-router-dom';
@@ -9,6 +9,12 @@ import api from "../../services/api"
 
 export default function Profile() {
     const [incidents, setIncidents] = useState('');
+
+    // Trigger function when something happens to the Component
+    // When something from the array changes, the funciton is executed
+    // ex  useEffect(() =>  {handleProfile}, [ongname]) when ongname changes
+    useEffect(handleProfile, [])
+
     async function handleProfile() {
 
         try {
@@ -28,7 +34,7 @@ export default function Profile() {
         <div className="profile-container">
             <header>
                 <img src={logoImg} alt="Be The Hero" className="src" />
-                <span onClick={handleProfile}>Bem vinda, ONGZERA</span>
+                <span>Bem vinda, ONGZERA</span>
 
                 <Link className="button" to="/incidents/new">
                     Register new Incident
